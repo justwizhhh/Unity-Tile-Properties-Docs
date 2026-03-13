@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['removeaffectedtile_0',['RemoveAffectedTile',['../class_tile_properties_1_1_tile_properties_manager.html#ac032657b790680f07bb4b9c158186bc5',1,'TileProperties.TilePropertiesManager.RemoveAffectedTile(TileBase old_tile, string property_list_name)'],['../class_tile_properties_1_1_tile_properties_manager.html#a006a61810be87c3ad2ce5f27e9d2b0f0',1,'TileProperties.TilePropertiesManager.RemoveAffectedTile(int index, string property_list_name)']]],
+  ['removetileproperty_1',['RemoveTileProperty',['../class_tile_properties_1_1_tile_properties_manager.html#a5ab6ae4d2060c8a5b98bc2a991f7a759',1,'TileProperties.TilePropertiesManager.RemoveTileProperty(TileBase tile, string property_name, bool throw_on_tile_find=false, bool throw_on_property_find=false)'],['../class_tile_properties_1_1_tile_properties_manager.html#a4b22c34d6dcac88714068845a58256a9',1,'TileProperties.TilePropertiesManager.RemoveTileProperty(string property_list_name, string property_name, bool throw_on_list_find=false, bool throw_on_property_find=false)']]]
+];
