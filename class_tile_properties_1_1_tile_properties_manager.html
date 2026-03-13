@@ -30,6 +30,7 @@
   <td id="projectalign">
    <div id="projectname">TilePropertiesAPI<span id="projectnumber">&#160;1.0</span>
    </div>
+   <div id="projectbrief">A dynamic and editor-friendly metadata system for 2D tilemap tiles in Unity 6.</div>
   </td>
  </tr>
  </tbody>
@@ -105,6 +106,8 @@ Inheritance diagram for TileProperties.TilePropertiesManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:adba0f8e2dfcd0a0530faee582f09f633" id="r_adba0f8e2dfcd0a0530faee582f09f633"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#adba0f8e2dfcd0a0530faee582f09f633">AreListsNull</a> ()</td></tr>
+<tr class="memdesc:adba0f8e2dfcd0a0530faee582f09f633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true or false if there have been any tile property lists assigned to this object or not.  <br /></td></tr>
 <tr class="memitem:a419b747dc64f85677d25c68132eb84cd" id="r_a419b747dc64f85677d25c68132eb84cd"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a419b747dc64f85677d25c68132eb84cd">DoesTileExistWithProperty</a> (TileBase tile, ref <a class="el" href="class_tile_properties_1_1_tile_properties_list.html">TilePropertiesList</a> included_list, bool throw_on_property_find=true)</td></tr>
 <tr class="memdesc:a419b747dc64f85677d25c68132eb84cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a reference to a tile, and checks if it has been assigned to any tile property list.  <br /></td></tr>
 <tr class="memitem:a7e05f7ffb6ade5d4880532bfb315f5bb" id="r_a7e05f7ffb6ade5d4880532bfb315f5bb"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7e05f7ffb6ade5d4880532bfb315f5bb">DoesTilePropertyListExist</a> (string list_name, ref <a class="el" href="class_tile_properties_1_1_tile_properties_list.html">TilePropertiesList</a> included_list, bool throw_on_list_find=true)</td></tr>
@@ -123,10 +126,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a006a61810be87c3ad2ce5f27e9d2b0f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a reference to a 'TileBase' object, at position 'index', in a specific tile property list.  <br /></td></tr>
 <tr class="memitem:a69ee730cb6e4b9994cf827f92c57cd53" id="r_a69ee730cb6e4b9994cf827f92c57cd53"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a69ee730cb6e4b9994cf827f92c57cd53">ClearAllAffectedTiles</a> (string property_list_name)</td></tr>
 <tr class="memdesc:a69ee730cb6e4b9994cf827f92c57cd53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all references to 'TileBase' objects inside of a specific tile property list.  <br /></td></tr>
-<tr class="memitem:a651fe131382563b7b8c967b338096ad0" id="r_a651fe131382563b7b8c967b338096ad0"><td class="memItemLeft">object&#160;</td><td class="memItemRight"><a class="el" href="#a651fe131382563b7b8c967b338096ad0">GetTileProperty</a> (TileBase tile, string property_name, bool throw_on_tile_find=false, bool throw_on_property_find=false)</td></tr>
-<tr class="memdesc:a651fe131382563b7b8c967b338096ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the generic unboxed value of a tile property variable, based on a reference to a tile object.  <br /></td></tr>
-<tr class="memitem:a59d51dd4a11b3a0a3bd6164411668959" id="r_a59d51dd4a11b3a0a3bd6164411668959"><td class="memItemLeft">object&#160;</td><td class="memItemRight"><a class="el" href="#a59d51dd4a11b3a0a3bd6164411668959">GetTileProperty</a> (string property_list_name, string property_name, bool throw_on_list_find=false, bool throw_on_property_find=false)</td></tr>
-<tr class="memdesc:a59d51dd4a11b3a0a3bd6164411668959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the generic unboxed value of a tile property variable, based on a reference to a tile property list's name.  <br /></td></tr>
+<tr class="memitem:ad5227d42ae6a814f9823b9f4e06592e4" id="r_ad5227d42ae6a814f9823b9f4e06592e4"><td class="memItemLeft">object&#160;</td><td class="memItemRight"><a class="el" href="#ad5227d42ae6a814f9823b9f4e06592e4">GetTileProperty</a> (TileBase tile, string property_name, Type property_type, bool throw_on_tile_find=false, bool throw_on_property_find=false)</td></tr>
+<tr class="memdesc:ad5227d42ae6a814f9823b9f4e06592e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the generic unboxed value of a tile property variable, based on a reference to a tile object.  <br /></td></tr>
+<tr class="memitem:af189a94b2d20f0e7e0023f0162d7b2a9" id="r_af189a94b2d20f0e7e0023f0162d7b2a9"><td class="memItemLeft">object&#160;</td><td class="memItemRight"><a class="el" href="#af189a94b2d20f0e7e0023f0162d7b2a9">GetTileProperty</a> (string property_list_name, string property_name, Type property_type, bool throw_on_list_find=false, bool throw_on_property_find=false)</td></tr>
+<tr class="memdesc:af189a94b2d20f0e7e0023f0162d7b2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the generic unboxed value of a tile property variable, based on a reference to a tile property list's name.  <br /></td></tr>
 <tr class="memitem:a9be60a9e6e364b8d077b67eb0507e67d" id="r_a9be60a9e6e364b8d077b67eb0507e67d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9be60a9e6e364b8d077b67eb0507e67d">SetTileProperty</a> (TileBase tile, string property_name, object new_value, bool throw_on_tile_find=false, bool throw_on_property_find=false)</td></tr>
 <tr class="memdesc:a9be60a9e6e364b8d077b67eb0507e67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of a tile property variable, based on a reference to a tile object.  <br /></td></tr>
 <tr class="memitem:a07d6d4a9daa788edab7b8e9714117b4c" id="r_a07d6d4a9daa788edab7b8e9714117b4c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a07d6d4a9daa788edab7b8e9714117b4c">SetTileProperty</a> (string property_list_name, string property_name, object new_value, bool throw_on_list_find=false, bool throw_on_property_find=false)</td></tr>
@@ -142,16 +145,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a84a7772d6d1766ca5e8037e5e609139a" id="r_a84a7772d6d1766ca5e8037e5e609139a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a84a7772d6d1766ca5e8037e5e609139a">ClearTileProperties</a> (string property_list_name)</td></tr>
 <tr class="memdesc:a84a7772d6d1766ca5e8037e5e609139a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a reference for a tile property list's name, and removes all properties assigned to that list.  <br /></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a8f00836a6e32c90690122b42f387f5f7" id="r_a8f00836a6e32c90690122b42f387f5f7"><td class="memItemLeft">List&lt; <a class="el" href="class_tile_properties_1_1_tile_properties_list.html">TilePropertiesList</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a8f00836a6e32c90690122b42f387f5f7">TilePropertyLists</a> = new()</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ab693058f39ce5a5b4c283f92ee437eaa" id="r_ab693058f39ce5a5b4c283f92ee437eaa"><td class="memItemLeft">static <a class="el" href="class_tile_properties_1_1_tile_properties_manager.html">TilePropertiesManager</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab693058f39ce5a5b4c283f92ee437eaa">Instance</a><code> [get]</code></td></tr>
-<tr class="memitem:ad4fdc995e57d165f201f08ef739ba803" id="r_ad4fdc995e57d165f201f08ef739ba803"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ad4fdc995e57d165f201f08ef739ba803">PropertyListsLoaded</a><code> [get]</code></td></tr>
-<tr class="memdesc:ad4fdc995e57d165f201f08ef739ba803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enabled once all tile property lists have been loaded into scene.  <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-events" class="groupheader"><a id="events" name="events"></a>
-Events</h2></td></tr>
-<tr class="memitem:acd354034130af5cc10cf9d80e476a4aa" id="r_acd354034130af5cc10cf9d80e476a4aa"><td class="memItemLeft">Action&#160;</td><td class="memItemRight"><a class="el" href="#acd354034130af5cc10cf9d80e476a4aa">OnPropertyListsLoad</a></td></tr>
-<tr class="memdesc:acd354034130af5cc10cf9d80e476a4aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event callback for when all tile property lists have finished being loaded into the scene.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Singleton object that keeps track of every tile property list in the game and passes property info to other objects. </p>
@@ -180,7 +180,7 @@ Events</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">new_tile</td><td>A soon-to-be added tile object reference from a Tilemap. </td></tr>
-    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the Editor. </td></tr>
+    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the <a class="el" href="namespace_tile_properties_1_1_editor.html">Editor</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -219,13 +219,32 @@ Events</h2></td></tr>
 <p>Add a new tile property variable to a specific tile property list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the Editor. </td></tr>
+    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the <a class="el" href="namespace_tile_properties_1_1_editor.html">Editor</a>. </td></tr>
     <tr><td class="paramname">new_property_name</td><td>The string name of the soon-to-be added tile property. </td></tr>
     <tr><td class="paramname">new_property_value</td><td>The object value that will be stored in the soon-to-be added property. </td></tr>
     <tr><td class="paramname">throw_on_list_find</td><td>Should this throw an error log if no list can be found with this name? </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="adba0f8e2dfcd0a0530faee582f09f633" name="adba0f8e2dfcd0a0530faee582f09f633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adba0f8e2dfcd0a0530faee582f09f633">&#9670;&#160;</a></span>AreListsNull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TileProperties.TilePropertiesManager.AreListsNull </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true or false if there have been any tile property lists assigned to this object or not. </p>
 
 </div>
 </div>
@@ -247,7 +266,7 @@ Events</h2></td></tr>
 <p>Clears all references to 'TileBase' objects inside of a specific tile property list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the Editor. </td></tr>
+    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the <a class="el" href="namespace_tile_properties_1_1_editor.html">Editor</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -272,7 +291,7 @@ Events</h2></td></tr>
 <p>Takes a reference for a tile property list's name, and removes all properties assigned to that list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the Editor. </td></tr>
+    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the <a class="el" href="namespace_tile_properties_1_1_editor.html">Editor</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -407,7 +426,7 @@ Events</h2></td></tr>
  See also: </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a954b2ec8f98a361fedb3a703ecd41b09" title="Returns a list of all &#39;TileBase&#39; objects affected by a specific tile property list.">GetAllAffectedTiles</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the Editor. </td></tr>
+    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the <a class="el" href="namespace_tile_properties_1_1_editor.html">Editor</a>. </td></tr>
     <tr><td class="paramname">index</td><td>The list index for the requested tile. </td></tr>
   </table>
   </dd>
@@ -433,15 +452,15 @@ Events</h2></td></tr>
 <p>Returns a list of all 'TileBase' objects affected by a specific tile property list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the Editor. </td></tr>
+    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the <a class="el" href="namespace_tile_properties_1_1_editor.html">Editor</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a59d51dd4a11b3a0a3bd6164411668959" name="a59d51dd4a11b3a0a3bd6164411668959"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59d51dd4a11b3a0a3bd6164411668959">&#9670;&#160;</a></span>GetTileProperty() <span class="overload">[1/2]</span></h2>
+<a id="af189a94b2d20f0e7e0023f0162d7b2a9" name="af189a94b2d20f0e7e0023f0162d7b2a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af189a94b2d20f0e7e0023f0162d7b2a9">&#9670;&#160;</a></span>GetTileProperty() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -459,6 +478,11 @@ Events</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Type</td>          <td class="paramname"><span class="paramname"><em>property_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>throw_on_list_find</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
         </tr>
         <tr>
@@ -472,8 +496,9 @@ Events</h2></td></tr>
 <p>Returns the generic unboxed value of a tile property variable, based on a reference to a tile property list's name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the Editor. </td></tr>
+    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the <a class="el" href="namespace_tile_properties_1_1_editor.html">Editor</a>. </td></tr>
     <tr><td class="paramname">property_name</td><td>The name of the property to search the current property list for. </td></tr>
+    <tr><td class="paramname">property_type</td><td>The variable type of the property to search the property list(s) for. </td></tr>
     <tr><td class="paramname">throw_on_list_find</td><td>Should this throw an error log if no list can be found with this name? </td></tr>
     <tr><td class="paramname">throw_on_property_find</td><td>Should this throw an error log if no property can be found in the list attached to this tile? </td></tr>
   </table>
@@ -482,8 +507,8 @@ Events</h2></td></tr>
 
 </div>
 </div>
-<a id="a651fe131382563b7b8c967b338096ad0" name="a651fe131382563b7b8c967b338096ad0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a651fe131382563b7b8c967b338096ad0">&#9670;&#160;</a></span>GetTileProperty() <span class="overload">[2/2]</span></h2>
+<a id="ad5227d42ae6a814f9823b9f4e06592e4" name="ad5227d42ae6a814f9823b9f4e06592e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5227d42ae6a814f9823b9f4e06592e4">&#9670;&#160;</a></span>GetTileProperty() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -497,6 +522,11 @@ Events</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>property_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type</td>          <td class="paramname"><span class="paramname"><em>property_type</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -516,6 +546,7 @@ Events</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">tile</td><td>The tile object reference from a Tilemap. </td></tr>
     <tr><td class="paramname">property_name</td><td>The name of the property to search the property list(s) for. </td></tr>
+    <tr><td class="paramname">property_type</td><td>The variable type of the property to search the property list(s) for. </td></tr>
     <tr><td class="paramname">throw_on_tile_find</td><td>Should this throw an error log if no tile can be found with this property? </td></tr>
     <tr><td class="paramname">throw_on_property_find</td><td>Should this throw an error log if no property can be found in the list attached to this tile? </td></tr>
   </table>
@@ -550,7 +581,7 @@ Events</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>The list index for the removed tile. </td></tr>
-    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the Editor. </td></tr>
+    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the <a class="el" href="namespace_tile_properties_1_1_editor.html">Editor</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -583,7 +614,7 @@ Events</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">old_tile</td><td>A soon-to-be removed tile object reference from a Tilemap. </td></tr>
-    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the Editor. </td></tr>
+    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the <a class="el" href="namespace_tile_properties_1_1_editor.html">Editor</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -625,7 +656,7 @@ Events</h2></td></tr>
  See also: </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a77660a30d88f07ce4153b6cee7322e60" title="Takes a reference for a tile object, and removes all tile properties assigned to it.">ClearTileProperties</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the Editor. </td></tr>
+    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the <a class="el" href="namespace_tile_properties_1_1_editor.html">Editor</a>. </td></tr>
     <tr><td class="paramname">property_name</td><td>The string name of the soon-to-be removed tile property. </td></tr>
     <tr><td class="paramname">throw_on_list_find</td><td>Should this throw an error log if no list can be found with this name? </td></tr>
     <tr><td class="paramname">throw_on_property_find</td><td>Should this throw an error log if no property can be found in the list attached to this tile? </td></tr>
@@ -708,7 +739,7 @@ Events</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tile</td><td>The soon-to-be replaced tile object reference from a Tilemap. </td></tr>
-    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the Editor. </td></tr>
+    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the <a class="el" href="namespace_tile_properties_1_1_editor.html">Editor</a>. </td></tr>
     <tr><td class="paramname">index</td><td>The list index for the replaced tile. </td></tr>
   </table>
   </dd>
@@ -753,7 +784,7 @@ Events</h2></td></tr>
 <p>Sets the value of a tile property variable, based on a reference to a tile property list's name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the Editor. </td></tr>
+    <tr><td class="paramname">property_list_name</td><td>The name of a '<a class="el" href="class_tile_properties_1_1_tile_properties_list.html" title="A ScriptableObject which stores a list of tile property values (ITPVariableType), as well as a list o...">TilePropertiesList</a>' ScriptableObject in the <a class="el" href="namespace_tile_properties_1_1_editor.html">Editor</a>. </td></tr>
     <tr><td class="paramname">property_name</td><td>The name of the property to search the property list(s) for. </td></tr>
     <tr><td class="paramname">new_value</td><td>The new object value to set for this property in the list. </td></tr>
     <tr><td class="paramname">throw_on_list_find</td><td>Should this throw an error log if no list can be found with this name? </td></tr>
@@ -812,6 +843,21 @@ Events</h2></td></tr>
 
 </div>
 </div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a8f00836a6e32c90690122b42f387f5f7" name="a8f00836a6e32c90690122b42f387f5f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f00836a6e32c90690122b42f387f5f7">&#9670;&#160;</a></span>TilePropertyLists</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_tile_properties_1_1_tile_properties_list.html">TilePropertiesList</a>&gt; TileProperties.TilePropertiesManager.TilePropertyLists = new()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>
 <a id="ab693058f39ce5a5b4c283f92ee437eaa" name="ab693058f39ce5a5b4c283f92ee437eaa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab693058f39ce5a5b4c283f92ee437eaa">&#9670;&#160;</a></span>Instance</h2>
@@ -835,50 +881,8 @@ Events</h2></td></tr>
 
 </div>
 </div>
-<a id="ad4fdc995e57d165f201f08ef739ba803" name="ad4fdc995e57d165f201f08ef739ba803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4fdc995e57d165f201f08ef739ba803">&#9670;&#160;</a></span>PropertyListsLoaded</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TileProperties.TilePropertiesManager.PropertyListsLoaded</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Enabled once all tile property lists have been loaded into scene. </p>
-<p>Tile properties have to be loaded in from a list of addressable objects, so do NOT try to access tile property values until this is set to 'true'!</p>
-
-</div>
-</div>
-<a name="doc-event-members" id="doc-event-members"></a><h2 id="header-doc-event-members" class="groupheader">Event Documentation</h2>
-<a id="acd354034130af5cc10cf9d80e476a4aa" name="acd354034130af5cc10cf9d80e476a4aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd354034130af5cc10cf9d80e476a4aa">&#9670;&#160;</a></span>OnPropertyListsLoad</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Action TileProperties.TilePropertiesManager.OnPropertyListsLoad</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event callback for when all tile property lists have finished being loaded into the scene. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Dominik/Desktop/Private/Uni/Year3/CCTPTilemapProject/Assets/Scripts/TileProperties/<a class="el" href="_tile_properties_manager_8cs.html">TilePropertiesManager.cs</a></li>
+<li>C:/Users/Dominik/Desktop/Private/Uni/Year3/CCTPTilemapProject/Library/PackageCache/com.justwizhhh.tile-properties@8146538f3e3d/Runtime/<a class="el" href="_tile_properties_manager_8cs.html">TilePropertiesManager.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
