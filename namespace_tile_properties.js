@@ -5,8 +5,5 @@ var namespace_tile_properties =
     [ "TilePropertiesManager", "class_tile_properties_1_1_tile_properties_manager.html", "class_tile_properties_1_1_tile_properties_manager" ],
     [ "TilePropertySettings", "class_tile_properties_1_1_tile_property_settings.html", "class_tile_properties_1_1_tile_property_settings" ],
     [ "TilePropertySettingsEntry", "struct_tile_properties_1_1_tile_property_settings_entry.html", "struct_tile_properties_1_1_tile_property_settings_entry" ],
-    [ "ITPVariableType", "interface_tile_properties_1_1_i_t_p_variable_type.html", "interface_tile_properties_1_1_i_t_p_variable_type" ],
-    [ "TPSample_Button", "class_tile_properties_1_1_t_p_sample___button.html", "class_tile_properties_1_1_t_p_sample___button" ],
-    [ "TPSample_PlayerController", "class_tile_properties_1_1_t_p_sample___player_controller.html", "class_tile_properties_1_1_t_p_sample___player_controller" ],
-    [ "TPSample_TestFunctions", "class_tile_properties_1_1_t_p_sample___test_functions.html", "class_tile_properties_1_1_t_p_sample___test_functions" ]
+    [ "ITPVariableType", "interface_tile_properties_1_1_i_t_p_variable_type.html", "interface_tile_properties_1_1_i_t_p_variable_type" ]
 ];

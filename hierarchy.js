@@ -7,9 +7,6 @@ var hierarchy =
     ] ],
     [ "TileProperties.ITPVariableType", "interface_tile_properties_1_1_i_t_p_variable_type.html", null ],
     [ "MonoBehaviour", null, [
-      [ "TileProperties.TPSample_Button", "class_tile_properties_1_1_t_p_sample___button.html", null ],
-      [ "TileProperties.TPSample_PlayerController", "class_tile_properties_1_1_t_p_sample___player_controller.html", null ],
-      [ "TileProperties.TPSample_TestFunctions", "class_tile_properties_1_1_t_p_sample___test_functions.html", null ],
       [ "TileProperties.TilePropertiesManager", "class_tile_properties_1_1_tile_properties_manager.html", null ]
     ] ],
     [ "ScriptableObject", null, [

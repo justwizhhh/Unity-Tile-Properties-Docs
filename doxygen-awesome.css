@@ -589,6 +589,7 @@ iframe#MSearchResults {
 
 #side-nav {
     padding: 0 !important;
+    margin-top: 16px;
     background: var(--side-nav-background);
 }
 

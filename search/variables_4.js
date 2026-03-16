@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['moveacceleration_0',['MoveAcceleration',['../class_tile_properties_1_1_t_p_sample___player_controller.html#a57d6d2c46fd07cd855463881f43e11db',1,'TileProperties::TPSample_PlayerController']]],
-  ['movespeed_1',['MoveSpeed',['../class_tile_properties_1_1_t_p_sample___player_controller.html#a564b621af88e0d4a3038829fa9829ef6',1,'TileProperties::TPSample_PlayerController']]]
+  ['settingsentries_0',['SettingsEntries',['../class_tile_properties_1_1_tile_property_settings.html#a96c4684ec40b4a8687f995ed7d35d84f',1,'TileProperties::TilePropertySettings']]]
 ];

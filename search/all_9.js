@@ -1,5 +1,13 @@
 var searchData=
 [
-  ['removeaffectedtile_0',['RemoveAffectedTile',['../class_tile_properties_1_1_tile_properties_manager.html#ac032657b790680f07bb4b9c158186bc5',1,'TileProperties.TilePropertiesManager.RemoveAffectedTile(TileBase old_tile, string property_list_name)'],['../class_tile_properties_1_1_tile_properties_manager.html#a006a61810be87c3ad2ce5f27e9d2b0f0',1,'TileProperties.TilePropertiesManager.RemoveAffectedTile(int index, string property_list_name)']]],
-  ['removetileproperty_1',['RemoveTileProperty',['../class_tile_properties_1_1_tile_properties_manager.html#a5ab6ae4d2060c8a5b98bc2a991f7a759',1,'TileProperties.TilePropertiesManager.RemoveTileProperty(TileBase tile, string property_name, bool throw_on_tile_find=false, bool throw_on_property_find=false)'],['../class_tile_properties_1_1_tile_properties_manager.html#a4b22c34d6dcac88714068845a58256a9',1,'TileProperties.TilePropertiesManager.RemoveTileProperty(string property_list_name, string property_name, bool throw_on_list_find=false, bool throw_on_property_find=false)']]]
+  ['tileproperties_0',['TileProperties',['../namespace_tile_properties.html',1,'TileProperties'],['../class_tile_properties_1_1_tile_properties_list.html#aea9728db1f3048f674c04e0857cdba43',1,'TileProperties.TilePropertiesList.TileProperties']]],
+  ['tileproperties_3a_3aeditor_1',['Editor',['../namespace_tile_properties_1_1_editor.html',1,'TileProperties']]],
+  ['tilepropertieslist_2',['TilePropertiesList',['../class_tile_properties_1_1_tile_properties_list.html',1,'TileProperties']]],
+  ['tilepropertiesmanager_3',['TilePropertiesManager',['../class_tile_properties_1_1_tile_properties_manager.html',1,'TileProperties']]],
+  ['tilepropertylists_4',['TilePropertyLists',['../class_tile_properties_1_1_tile_properties_manager.html#a8f00836a6e32c90690122b42f387f5f7',1,'TileProperties::TilePropertiesManager']]],
+  ['tilepropertysettings_5',['TilePropertySettings',['../class_tile_properties_1_1_tile_property_settings.html',1,'TileProperties']]],
+  ['tilepropertysettingsentry_6',['TilePropertySettingsEntry',['../struct_tile_properties_1_1_tile_property_settings_entry.html',1,'TileProperties']]],
+  ['tplistinspector_7',['TPListInspector',['../class_tile_properties_1_1_editor_1_1_t_p_list_inspector.html',1,'TileProperties::Editor']]],
+  ['tplistmanagerinspector_8',['TPListManagerInspector',['../class_tile_properties_1_1_editor_1_1_t_p_list_manager_inspector.html',1,'TileProperties::Editor']]],
+  ['tpsettingsinspector_9',['TPSettingsInspector',['../class_tile_properties_1_1_editor_1_1_t_p_settings_inspector.html',1,'TileProperties::Editor']]]
 ];
