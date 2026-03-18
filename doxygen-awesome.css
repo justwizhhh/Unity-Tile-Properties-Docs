@@ -643,6 +643,7 @@ iframe#MSearchResults {
     font-family: serif;
     height: auto;
     text-align: right;
+    margin-right: 10px;
 }
 
 #nav-tree .arrow {

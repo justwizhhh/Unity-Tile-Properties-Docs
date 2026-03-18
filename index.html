@@ -91,11 +91,125 @@ $(function(){initNavTree('index.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Unity Tile Properties Documentation</div></div>
+  <div class="headertitle"><div class="title">Tile Properties - A dynamic and editor-friendly metadata plugin for 2D tilemap tiles in Unity 6.</div></div>
 </div><!--header-->
 <div class="contents">
 <a href="doxygen_crawl.html"></a>
-</div><!-- contents -->
+<p>‘Tile Properties’ is an API plugin made for Unity 6, made to allow level designers and programmers to store and configure custom metadata for large lists of tiles in a 2D Tilemap! Inspired by similar features seen in Godot and Tiled, the plugin expands on Unity’s default “2D Tilemap” package without overwriting any of the package’s own scripts, and can be installed in any pre-existing game projects without conflicts emerging. &nbsp;&nbsp;</p>
+<h2>Features:</h2>
+<ul>
+  <li>Expandable lists of "tile property" variables that can be applied to large lists of tiles at once</li>
+  <li>Numerous base C#/Unity variable types supported out of the box</li>
+  <li>A variety of tools and functions to access these tile properties through the inspector and through code as well</li>
+  <li>Integrated inspector tools and gizmo-based displays for debugging </li>
+</ul>
+<h2>Download:</h2>
+<ul>
+  <li><a href="https://github.com/justwizhhh/Unity-Tile-Properties">GitHub</a></li>
+  <li>Unity Asset Store (coming soon!)</li>
+</ul>
+<h2>Recommended Usage:</h2>
+<p>The 'Tile Properties' plugin can be installed in a fresh 2D Unity project, or installed in an already-existing project that uses Tilemaps. Tile properties can be accessed and changed in code through the 'TilePropertiesManager' singleton object, where an array of built-in functions can be used. Tile property lists themselves are stored as ScriptableObjects that keep track of different variable types, as well as references to 'TileBase' objects for the tiles that are actually going to be affected by the property data. &nbsp;&nbsp;</p>
+<h4>How to create a new Tile Property List:</h4>
+<ul>
+  <li>Click the '+' icon in the 'Project' window </li>
+  <li>Open '2D > 'Tile Property List'</li>
+  <li>- If this is the first Tile Property List that's being created inside of the project, a 'Tile Property Settings' object will also be created. This ScriptableObject can be used to toggle gizmo displays on and off in the 'Scene' window for debugging purposes and to see which tiles in the level are actually being affected by tile properties.</li>
+</ul>
+<h4>How to use Tile Properties in a scene:</h4>
+<ul>
+  <li>Open your level scene of choice</li>
+  <li>Click the '+' icon in the 'Hierarchy' window</li>
+  <li>Click 'Create Empty'</li>
+  <li>Parent the new "Tile Property Manager" object to the level's "Grid" object'</li>
+  <li>- This would purely be for organisation purposes, so that the property manager is kept next to all of the other tile-map related objects in the scene</li>
+  <li>Add the "TilePropertiesManager" component to the script and assign it the property lists that you want the scene to use</li>
+</ul>
+<h2>Example Code:</h2>
+<p>The following is a simple example of how Tile Property functions can be used to access and change basic properties: &nbsp;&nbsp;</p>
+<pre class="fragment">
+public ParticleSystem GrassReplacementParticles;
+public ParticleSystem SandReplacementParticles;
+public TileBase NewSnowEffectTile;
+
+private TilePropertiesManager current_tile_properties;
+
+void Start()
+{
+    current_tile_properties = FindFirstObjectByType<TilePropertiesManager>();
+}
+
+public void ChangeGrassTileProperty()
+{
+    current_tile_properties.SetTileProperty("GrassTiles", "FootstepParticles", SandReplacementParticles, true, true);
+}
+
+public void ChangeSandTileProperty()
+{
+    current_tile_properties.SetTileProperty("SandTiles", "FootstepParticles", GrassReplacementParticles, true, true);
+}
+
+public void ApplySnowTileProperty()
+{
+    current_tile_properties.AddAffectedTile(NewSnowEffectTile, "SnowTiles");
+}
+
+public void WipeSnowTileProperties()
+{
+    current_tile_properties.ClearAllAffectedTiles("SnowTiles");
+}
+
+public void WipeAllTileProperties()
+{
+    current_tile_properties.ClearTileProperties("GrassTiles");
+    current_tile_properties.ClearTileProperties("SandTiles");
+}
+</pre><doxygen-awesome-fragment-copy-button title="Copy to clipboard"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></svg></doxygen-awesome-fragment-copy-button>
+<p>The following is an example of how Tile Properties could be used to generate random tiles in a rectangle area, based on probability values that are stored in Tile Property Lists: &nbsp;&nbsp;</p>
+  <pre class="fragment">
+public BoundsInt TileArea;
+public string TilePropertyName;
+
+private Tilemap tilemap;
+private TilePropertiesManager tilePropertiesManager;
+
+private void Awake()
+{
+    tilemap = GetComponent<Tilemap>();
+    tilePropertiesManager = GetComponent<TilePropertiesManager>();
+}
+
+private void Start()
+{
+    GenerateTilesArea();
+}
+
+public void GenerateTilesArea()
+{
+    int tileCount = TileArea.size.x * TileArea.size.y * TileArea.size.z;
+    List<TileBase> generatedTiles = new List<TileBase>(tileCount);
+    
+    while (generatedTiles.Count < tileCount)
+    {
+        int randomTileIndex = Random.Range(0, tilePropertiesManager.TilePropertyLists.Count);
+        float random = Random.Range(0f, 1f);
+
+        TileBase randomTile = tilePropertiesManager.TilePropertyLists[randomTileIndex].AffectedTiles[0];
+        float randomTileSpawnChance = (float)tilePropertiesManager.GetTileProperty(
+            randomTile,
+            TilePropertyName,
+            typeof(float), true, true);
+
+        if (random < randomTileSpawnChance)
+        {
+            generatedTiles.Add(randomTile);
+        }
+    }
+
+    tilemap.SetTilesBlock(TileArea, generatedTiles.ToArray());
+}
+</pre><doxygen-awesome-fragment-copy-button title="Copy to clipboard"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></svg></doxygen-awesome-fragment-copy-button>
+
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->

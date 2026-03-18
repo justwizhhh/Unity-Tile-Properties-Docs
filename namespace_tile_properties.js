@@ -1,6 +1,5 @@
 var namespace_tile_properties =
 [
-    [ "Editor", "namespace_tile_properties_1_1_editor.html", "namespace_tile_properties_1_1_editor" ],
     [ "TilePropertiesList", "class_tile_properties_1_1_tile_properties_list.html", "class_tile_properties_1_1_tile_properties_list" ],
     [ "TilePropertiesManager", "class_tile_properties_1_1_tile_properties_manager.html", "class_tile_properties_1_1_tile_properties_manager" ],
     [ "TilePropertySettings", "class_tile_properties_1_1_tile_property_settings.html", "class_tile_properties_1_1_tile_property_settings" ],
