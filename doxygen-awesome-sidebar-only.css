@@ -50,7 +50,7 @@ SOFTWARE.
     }
 
     #nav-tree, #side-nav {
-        height: calc(100vh - var(--top-height)) !important;
+        height: calc(98vh - var(--top-height)) !important;
     }
 
     #nav-tree {
